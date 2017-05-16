@@ -22,7 +22,7 @@ public class Login {
 	private int millis=3000;
 	
   @Test
-  public void f() throws MalformedURLException, InterruptedException {
+  public void testLogin() throws MalformedURLException, InterruptedException {
 	  driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),cap);    
 	  LoginPage lpg=new LoginPage(driver);
 	  lpg.Login("account","password");
